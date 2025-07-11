@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>delcuentoalcódigocontraliteraturas</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="centrado">
+    <h1 class="title">[ del cuento al código ]</h1> </div>
+
+     <div class="centrado"> <h1>
+        Taller práctico de programación creativa en Hydra  
+       por <a href="https://www.instagram.com/mikicorfiel/" target="_blank">Miki Corfiel</a>
+      </h1> </div>
+             <div class="centrado">
+       <img src=" https://cdn.glitch.global/fcf89f4b-01d3-4f19-8575-1a428096f382/Captura%20de%20pantalla%20(4).png?v=1742753467421"
+         alt=""/></div>
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/fcf89f4b-01d3-4f19-8575-1a428096f382/Captura%20de%20pantalla%20(5).png?v=1742753471636"
+         alt=""/></div>
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/fcf89f4b-01d3-4f19-8575-1a428096f382/Captura%20de%20pantalla%20(6).png?v=1742753477535"
+         alt=""/></div>
+        <div class="centrado">
+       <img src="https://cdn.glitch.global/fcf89f4b-01d3-4f19-8575-1a428096f382/Captura%20de%20pantalla%20(8).png?v=1743172556507
+"
+         alt=""/></div>
+
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/fcf89f4b-01d3-4f19-8575-1a428096f382/Captura%20de%20pantalla%20(7).png?v=1742753481428"
+         alt=""/></div>
+    <div class="centrado">
+       <img src="https://cdn.glitch.global/fcf89f4b-01d3-4f19-8575-1a428096f382/Captura%20de%20pantalla%20(9).png?v=1743174240733"
+         alt=""/></div>
+    
+        
+    
+    <br>
+    <canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(noise(200).thresh())
+.mask(shape(2,0.1).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+  </body>
+</html>

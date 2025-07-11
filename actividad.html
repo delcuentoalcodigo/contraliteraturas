@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>actividad</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="centrado">
+    <h1 class="title">actividad</h1>
+    </div>
+    
+    
+    
+     <div class="centrado">
+       <img src=" https://cdn.glitch.global/4774f028-eb77-4cb6-b76b-ce4276153b82/Captura%20de%20pantalla%20(202).png?v=1729128640410"
+    alt=""/></div>
+
+    
+    
+    
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4774f028-eb77-4cb6-b76b-ce4276153b82/Captura%20de%20pantalla%20(201).png?v=1729128523440"
+         alt=""/></div>
+    
+    
+    
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4774f028-eb77-4cb6-b76b-ce4276153b82/Captura%20de%20pantalla%20(199).png?v=1729113890095"
+         alt=""/></div>
+    
+    
+    
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4774f028-eb77-4cb6-b76b-ce4276153b82/Captura%20de%20pantalla%20(189).png?v=1729129257052"
+         alt=""/></div>
+    
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4774f028-eb77-4cb6-b76b-ce4276153b82/Captura%20de%20pantalla%20(190).png?v=1729129315307
+    "
+         alt=""/></div>
+    
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4774f028-eb77-4cb6-b76b-ce4276153b82/Captura%20de%20pantalla%20(191).png?v=1729129346019
+    "
+         alt=""/></div>
+    
+    
+    
+    
+    
+    <br><br><br><br><br>
+    <canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(noise(200).thresh())
+.mask(shape(2,0.1).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+  </body>
+</html>
